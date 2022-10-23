@@ -6,6 +6,7 @@ import ClassAndStyleBinding from './components/04-class-and-style-binding.vue'
 import ConditionalRendering from './components/05-conditional-rendering.vue'
 import ListRendering from './components/06-list-rendering.vue'
 import EventHandling from './components/07-event-handling.vue'
+import FormInputBinding from './components/08-form-input-bindings.vue'
 </script>
 
 <template>
@@ -15,7 +16,8 @@ import EventHandling from './components/07-event-handling.vue'
   <!-- <ClassAndStyleBinding class="auto-class" /> -->
   <!-- <ConditionalRendering /> -->
   <!-- <ListRendering /> -->
-  <EventHandling />
+  <!-- <EventHandling /> -->
+  <FormInputBinding />
 </template>
 
 <style scoped>
