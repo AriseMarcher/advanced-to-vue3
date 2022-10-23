@@ -8,6 +8,7 @@ import ListRendering from './components/06-list-rendering.vue'
 import EventHandling from './components/07-event-handling.vue'
 import FormInputBinding from './components/08-form-input-bindings.vue'
 import LifecycleHooks from './components/09-lifecycle-hooks.vue'
+import Watchers from './components/10-watchers.vue'
 </script>
 
 <template>
@@ -19,7 +20,8 @@ import LifecycleHooks from './components/09-lifecycle-hooks.vue'
   <!-- <ListRendering /> -->
   <!-- <EventHandling /> -->
   <!-- <FormInputBinding /> -->
-  <LifecycleHooks />
+  <!-- <LifecycleHooks /> -->
+  <Watchers />
 </template>
 
 <style scoped>
