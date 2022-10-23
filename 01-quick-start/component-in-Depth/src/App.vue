@@ -4,6 +4,8 @@ import ComponentA from './components/01-component-props.vue'
 import ComponentB from './components/02-component-event.vue'
 import ComponentC from './components/03-component-fallthrough-attributes.vue'
 import ComponentD from './components/04-component-slots.vue'
+import ComponentE from './components/05-component-project-inject.vue'
+
 const fooMsg = ref('这是给组件传递的props值');
 const likes = ref(123);
 
@@ -46,6 +48,8 @@ const handleClick = () => {
   <ComponentC @click="handleClick" class="large foo" id="999" />
   <br />
   <ComponentD />
+  <br />
+  <ComponentE />
 </template>
 
 <style scoped>
