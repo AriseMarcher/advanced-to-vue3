@@ -9,6 +9,17 @@ import EventHandling from './components/07-event-handling.vue'
 import FormInputBinding from './components/08-form-input-bindings.vue'
 import LifecycleHooks from './components/09-lifecycle-hooks.vue'
 import Watchers from './components/10-watchers.vue'
+import TemplateRefs from './components/11-template-refs.vue'
+
+import { ref, onMounted } from 'vue'
+// 我要拿 TemplateRefs 中的一些暴露值
+const templateRefs = ref(null);
+
+onMounted(() => {
+  console.log(templateRefs.value)
+  // console.log(templateRefs.value.myFn)
+  templateRefs.value.myFn('hello vue3.0')
+});
 </script>
 
 <template>
@@ -21,7 +32,8 @@ import Watchers from './components/10-watchers.vue'
   <!-- <EventHandling /> -->
   <!-- <FormInputBinding /> -->
   <!-- <LifecycleHooks /> -->
-  <Watchers />
+  <!-- <Watchers /> -->
+  <TemplateRefs ref="templateRefs" />
 </template>
 
 <style scoped>
