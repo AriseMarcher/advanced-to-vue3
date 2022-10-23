@@ -1,5 +1,9 @@
 <script setup>
-import ComponentA from './components/component-a.vue'
+import { ref } from 'vue'
+import ComponentA from './components/01-component-props.vue'
+
+const fooMsg = ref('这是给组件传递的props值');
+const likes = ref(123);
 </script>
 
 <template>
@@ -7,7 +11,7 @@ import ComponentA from './components/component-a.vue'
   <br />
   <GlobalComponent />
   <br />
-  <ComponentA />
+  <ComponentA :foo="fooMsg" greeting-message="hello vue3.0" :likes="likes" />
 </template>
 
 <style scoped>
