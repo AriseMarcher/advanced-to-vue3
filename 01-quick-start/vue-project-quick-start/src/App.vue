@@ -7,6 +7,7 @@ import ConditionalRendering from './components/05-conditional-rendering.vue'
 import ListRendering from './components/06-list-rendering.vue'
 import EventHandling from './components/07-event-handling.vue'
 import FormInputBinding from './components/08-form-input-bindings.vue'
+import LifecycleHooks from './components/09-lifecycle-hooks.vue'
 </script>
 
 <template>
@@ -17,7 +18,8 @@ import FormInputBinding from './components/08-form-input-bindings.vue'
   <!-- <ConditionalRendering /> -->
   <!-- <ListRendering /> -->
   <!-- <EventHandling /> -->
-  <FormInputBinding />
+  <!-- <FormInputBinding /> -->
+  <LifecycleHooks />
 </template>
 
 <style scoped>
