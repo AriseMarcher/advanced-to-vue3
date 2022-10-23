@@ -2,6 +2,7 @@
 import { ref, watchEffect } from 'vue'
 import ComponentA from './components/01-component-props.vue'
 import ComponentB from './components/02-component-event.vue'
+import ComponentC from './components/03-component-fallthrough-attributes.vue'
 const fooMsg = ref('这是给组件传递的props值');
 const likes = ref(123);
 
@@ -20,8 +21,10 @@ watchEffect(() => {
   console.log(`firstName--${firstName.value}`)
   console.log(`lastName--${lastName.value}`)
   console.log(`fooValue--${fooValue.value}`)
-
 });
+const handleClick = () => {
+  console.log('这是通过透传挂载的事件')
+}
 </script>
 
 <template>
@@ -38,6 +41,8 @@ watchEffect(() => {
     @some-event="callback"
     @increase-by="increaseCount"
   />
+  <br />
+  <ComponentC @click="handleClick" class="large foo" id="999" />
 </template>
 
 <style scoped>
