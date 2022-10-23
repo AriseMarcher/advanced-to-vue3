@@ -1,8 +1,9 @@
 <script setup>
+import TemplateSyntax from './components/01-template-syntax.vue';
 </script>
 
 <template>
-  Hello Vue3.0
+  <TemplateSyntax />
 </template>
 
 <style scoped>
